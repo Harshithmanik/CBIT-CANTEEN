@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/vegetablesbg.png') no-repeat center center fixed;
+    background-size: cover;  /* Makes the image cover the entire background */
+    color: #ffffff;  /* Text color to make sure it's readable on the image */
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Admin Login Button */
+.login-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Menu and Cart Sections */
+.menu-section, .cart-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Login Form Styling */
+.login-form {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Admin Menu Buttons */
+.admin-menu button {
+    padding: 10px 15px;
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Mark Sold Out Button */
+.admin-menu button.soldout-btn {
+    background-color: orange;
+}
+
+.admin-menu button.soldout-btn.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+/* Stocked In Button */
+.admin-menu button.stocked-btn {
+    background-color: grey;
+}
+
+.admin-menu button.stocked-btn.enabled {
+    background-color: green;
+}
+
+/* Hover Effects for Admin Buttons */
+.admin-menu button:hover {
+    opacity: 0.9;
+}
+
+/* UPI Payment Page */
+.payment-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.payment-section img {
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+.payment-section .upi-id {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.payment-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-section button:hover {
+    background-color: #45a049;
+}
+
+/* Cart and Checkout Buttons */
+.cart-section .checkout-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.cart-section .checkout-button:hover {
+    background-color: #1976D2;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Canteen System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>College Canteen Online Ordering System</h1>
+        <button id="login-button" class="login-btn">Admin Login</button>
+    </header>
+
+    <!-- Student View -->
+    <section id="student-section">
+        <h2>Today's Menu</h2>
+        <div id="menu-list" class="menu"></div>
+        <h3>Your Cart</h3>
+        <div id="cart-list" class="cart"></div>
+        <button id="checkout-button" class="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- Admin Login Form -->
+    <section id="login-section" class="hidden login-form">
+        <h2>Admin Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter Username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="login-submit" class="submit-btn">Login</button>
+        <p id="login-error" class="error hidden">Invalid credentials! Try again.</p>
+    </section>
+
+    <!-- Admin View -->
+    <section id="admin-section" class="hidden">
+        <h2>Admin Panel</h2>
+        <div id="admin-menu"></div>
+        <h3>Edit Today's Menu</h3>
+        <label for="food-name">Food Name:</label>
+        <input type="text" id="food-name" placeholder="Enter Food Name">
+        <label for="food-price">Price:</label>
+        <input type="number" id="food-price" placeholder="Enter Food Price">
+        <button id="add-food" class="add-btn">Add Food</button>
+        <button id="update-menu" class="checkout-btn">Update Menu</button>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="payment-section">
+        <h2>Complete Payment</h2>
+        <div>
+            <p>Scan the QR Code or use the UPI ID below:</p>
+            <img src="images/Qr_example.png" alt="QR Code" style="width:200px; height:200px;">
+            <p><strong>UPI ID:</strong> canteen@upi</p>
+        </div>
+        <button id="make-payment-btn" class="checkout-btn">Make Payment</button>
+        <p id="payment-status" style="display:none; color:green; margin-top: 20px;">Payment Completed Successfully!</p>
+        <p id="order-id" style="display:none; color:rgb(255, 238, 0); margin-top: 10px;">Order ID: </p>
+    </section>
+
+    <script>
+        document.getElementById('make-payment-btn').addEventListener('click', function() {
+            // Simulate payment completion
+            document.getElementById('payment-status').style.display = 'block';
+
+            // Generate a random order ID
+            const orderId = 'ORD' + Math.floor(Math.random() * 1000000);
+            document.getElementById('order-id').textContent = 'Order ID: ' + orderId;
+
+            // Display the order ID
+            document.getElementById('order-id').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
